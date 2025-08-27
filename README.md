@@ -23,3 +23,5 @@ A comprehensive, client-side calculator to analyze and compare financial outcome
 -   `assets/css/style.css`: Contains all the styles for the application.
 -   `assets/js/main.js`: Contains all the JavaScript logic for calculations, presets, and interactivity.
 -   `README.md`: This file.
+
+## Access the calculator at [repo's ghpage](https://aerowild.github.io/buyorent/)<img width="1827" height="1265" alt="image" src="https://github.com/user-attachments/assets/cf9bc838-2f2f-4279-befd-c27296ab46db" />
