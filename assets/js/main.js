@@ -1,6 +1,6 @@
-<script>
-    // All JavaScript from the previous response remains the same.
-    // The HTML and CSS changes are all that's needed for the hints.
+document.addEventListener('DOMContentLoaded', () => {
+    // All script logic is now safely inside this listener
+
     const form = document.getElementById('calc-form');
     const chartCanvas = document.createElement('canvas');
     chartCanvas.id = 'comparisonChart';
@@ -168,6 +168,7 @@
         });
     }
     
+    // --- EVENT LISTENERS ---
     document.getElementById('calculate-button').addEventListener('click', () => {
         const settings = getFormSettings();
         const results = calculateScenario(settings);
@@ -184,6 +185,7 @@
         displayComparison(resultsA, resultsB, nameA, nameB);
     });
     
+    // --- PRESET MANAGEMENT ---
     const presetNameInput = document.getElementById('preset-name');
     const deleteSelect = document.getElementById('preset-delete-select');
     const scenarioASelect = document.getElementById('scenario-a-select');
@@ -225,5 +227,6 @@
         }
     });
 
-    document.addEventListener('DOMContentLoaded', populatePresets);
-</script>
+    // Initial load
+    populatePresets();
+});

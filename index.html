@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rent vs. Buy Scenario Planner</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
@@ -57,7 +60,6 @@
                 <div class="form-group"> <label for="buy-closing-cost">Buying Closing Costs <span class="hint-icon">ⓘ<span class="hint-text">Upfront fees for buying the home (e.g., inspections, title insurance). Typically 2-5% of the home price.</span></span></label> <div class="input-wrapper"><input type="number" id="buy-closing-cost" value="3"><span class="unit">% of home price</span></div> </div>
                 <div class="form-group"> <label for="sell-closing-cost">Selling Closing Costs <span class="hint-icon">ⓘ<span class="hint-text">Fees for selling the home in the future (e.g., agent commissions). Typically 6-8% of the future home price.</span></span></label> <div class="input-wrapper"><input type="number" id="sell-closing-cost" value="7"><span class="unit">% of future price</span></div> </div>
             </div>
-
             <div class="input-column">
                 <h2>Renting & Financial Assumptions</h2>
                 <h3>Monthly Renting Costs</h3>
@@ -69,7 +71,6 @@
                 <div class="form-group"> <label for="rent-increase">Annual Rent Increase <span class="hint-icon">ⓘ<span class="hint-text">The estimated percentage your rent will increase each year.</span></span></label> <div class="input-wrapper"><input type="number" id="rent-increase" value="3" step="0.1"><span class="unit">%</span></div> </div>
                 <div class="form-group"> <label for="investment-return">Investment Return Rate <span class="hint-icon">ⓘ<span class="hint-text">The average annual return you expect from your investments (e.g., stocks, bonds). 7% is a common historical average for the S&P 500.</span></span></label> <div class="input-wrapper"><input type="number" id="investment-return" value="7" step="0.1"><span class="unit">%</span></div> </div>
             </div>
-
             <div class="input-column">
                 <h2>General Financials & Analysis</h2>
                  <h3>Income & Expenses</h3>
@@ -89,7 +90,6 @@
                 <div class="form-group"> <label for="duration">Duration of Stay <span class="hint-icon">ⓘ<span class="hint-text">The number of years you plan to stay in the home or rental before moving. This is the time frame for the analysis.</span></span></label> <div class="input-wrapper"><input type="number" id="duration" value="10"><span class="unit">Years</span></div> </div>
              </div>
         </div>
-
         <div class="form-actions">
              <button id="calculate-button" type="button">Analyze Current Inputs</button>
         </div>
@@ -102,6 +102,7 @@
     </div>
 </div>
 
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
